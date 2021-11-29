@@ -3,8 +3,8 @@ FactoryBot.define do
     first_name
     last_name
     password
-    email { generate(:string) + '@test.ru' }
-    avatar { generate(:string) + '.jpg' }
+    email
+    avatar
     type { '' }
 
     factory :developer do
