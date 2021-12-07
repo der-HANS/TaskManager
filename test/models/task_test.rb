@@ -12,7 +12,7 @@ class TaskTest < ActiveSupport::TestCase
 
     { :into_development => :in_development, :into_qa => :in_qa, :into_code_review => :in_code_review,
       :into_ready_for_release => :ready_for_release, :into_released => :released, :into_archived => :archived }.each_pair do |event, state|
-      eval("task.#{event}")
+      task.fire_state_event(event)
       assert task.state?(state)
     end
   end
