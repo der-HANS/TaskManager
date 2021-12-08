@@ -565,8 +565,4 @@ Lint/RedundantCopDisableDirective:
 Lint/Void:
   Description: 'Possible use of operator/literal/variable in void context.'
   Enabled: false
-
-Style/HashSyntax:
-  Description: '=> to :'
-  StyleGuide: 'https://www.rubydoc.info/gems/rubocop/0.46.0/RuboCop/Cop/Style/HashSyntax'
-  Enabled: false
+  

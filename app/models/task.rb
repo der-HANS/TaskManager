@@ -13,19 +13,19 @@ class Task < ApplicationRecord
     end
 
     event :into_qa do
-      transition :in_development => :in_qa
+      transition in_development: :in_qa
     end
 
     event :into_code_review do
-      transition :in_qa =>  :in_code_review
+      transition in_qa: :in_code_review
     end
 
     event :into_ready_for_release do
-      transition :in_code_review => :ready_for_release
+      transition in_code_review: :ready_for_release
     end
 
     event :into_released do
-      transition :ready_for_release =>  :released
+      transition ready_for_release: :released
     end
 
     event :into_archived do
