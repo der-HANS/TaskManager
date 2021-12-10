@@ -565,3 +565,4 @@ Lint/RedundantCopDisableDirective:
 Lint/Void:
   Description: 'Possible use of operator/literal/variable in void context.'
   Enabled: false
+  
