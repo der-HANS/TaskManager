@@ -24,7 +24,4 @@ class Web::SessionsController < Web::ApplicationController
   def session_params
     params.require(:session_form).permit(:email, :password)
   end
-
-  def sign_in(login_session); end
-  def sign_out; end
 end
